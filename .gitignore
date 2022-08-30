@@ -1,2 +1,4 @@
 result/
 result
+nixos-configuration/backups/*.*
+home-manager/backups/*.*
