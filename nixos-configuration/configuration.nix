@@ -11,6 +11,7 @@ essentialPackages = [
     pkgs.git
     pkgs.home-manager
     pkgs.gnome.gnome-terminal
+    pkgs.gnome.gnome-tweaks
 ];
 
 systemPackages = [
