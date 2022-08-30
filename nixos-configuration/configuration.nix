@@ -36,6 +36,8 @@ in
   services.flatpak.enable = true;
   virtualisation.docker.enable = true;
   
+  virtualisation.virtualbox.host.enable = true;
+  virtualisation.virtualbox.host.enableExtensionPack = true;
 
   networking.hostName = "dn-jetbook"; # Define your hostname.
 
@@ -89,7 +91,7 @@ in
   users.users.davidnuon = {
     isNormalUser = true;
     description = "David Nuon";
-    extraGroups = [ "networkmanager" "wheel" "docker" ];
+    extraGroups = [ "networkmanager" "wheel" "docker" "vboxusers" ];
     packages = with pkgs; (
 	essentialPackages ++ nonFreePackages
     );
