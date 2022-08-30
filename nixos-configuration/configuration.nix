@@ -68,6 +68,13 @@ in
   # Enable CUPS to print documents.
   services.printing.enable = true;
 
+  i18n = {
+      inputMethod = {
+        enabled = "ibus";
+        ibus.engines = with pkgs.ibus-engines; [ mozc ];
+      };
+    };
+
   # Enable sound with pipewire.
   sound.enable = true;
   hardware.pulseaudio.enable = false;
