@@ -11,7 +11,9 @@
     enable = true;
     userName = "davidnuon";
     userEmail = "davidnuongm@gmail.com";
+
     extraConfig = {
+      core.editor = "vim";
       init = {
         defaultBranch = "main";
       };
