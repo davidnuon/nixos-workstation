@@ -32,12 +32,10 @@ in
   boot.loader.efi.efiSysMountPoint = "/boot/efi";
 
   services.flatpak.enable = true;
-  virtualisation.virtualbox.guest.enable = true;
   virtualisation.docker.enable = true;
   
 
-  networking.hostName = "dn-vm"; # Define your hostname.
-  # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
+  networking.hostName = "dn-jetbook"; # Define your hostname.
 
   # Enable networking
   networking.networkmanager.enable = true;
