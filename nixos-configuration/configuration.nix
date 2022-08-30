@@ -36,7 +36,7 @@ in
   virtualisation.docker.enable = true;
   
 
-  networking.hostName = "dn-innsersoul"; # Define your hostname.
+  networking.hostName = "dn-vm"; # Define your hostname.
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
 
   # Enable networking
