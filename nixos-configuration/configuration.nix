@@ -10,6 +10,7 @@ essentialPackages = [
     pkgs.firefox
     pkgs.git
     pkgs.home-manager
+    pkgs.gnome.gnome-terminal
 ];
 
 systemPackages = [

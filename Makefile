@@ -17,10 +17,10 @@ backup-config:
 	mkdir -pv ./nixos-configuration/backups/
 	cp /etc/nixos/configuration.nix ./nixos-configuration/backups/configuration-`date +%s`.nix
 
-install-all: backup-all install-home install-config
+install-all: install-home install-config
 
-install-home:
+install-home: backup-home
 	cp ./home-manager/home.nix $$HOME/.config/nixpkgs/home.nix 
 
-install-config:
+install-config: backup-config
 	sudo cp ./nixos-configuration/configuration.nix /etc/nixos/configuration.nix
