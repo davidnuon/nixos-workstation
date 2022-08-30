@@ -33,6 +33,8 @@ in
 
   services.flatpak.enable = true;
   virtualisation.virtualbox.guest.enable = true;
+  virtualisation.docker.enable = true;
+  
 
   networking.hostName = "dn-innsersoul"; # Define your hostname.
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
@@ -87,7 +89,7 @@ in
   users.users.davidnuon = {
     isNormalUser = true;
     description = "David Nuon";
-    extraGroups = [ "networkmanager" "wheel" ];
+    extraGroups = [ "networkmanager" "wheel" "docker" ];
     packages = with pkgs; (
 	essentialPackages ++ nonFreePackages
     );
