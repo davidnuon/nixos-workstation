@@ -19,6 +19,8 @@ systemPackages = [
     pkgs.wget
     pkgs.htop
     pkgs.curl
+
+    pkgs.vscode
 ];
 
 in
